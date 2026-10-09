@@ -1,0 +1,28 @@
+{
+  "status": "completed",
+  "video_pipeline": "ffmpeg 1fps frame extraction, EmbeddingGemma2 vision encoder per frame",
+  "not_native_video_encoder": true,
+  "synthetic": true,
+  "frames": [
+    {
+      "frame_second": 0,
+      "elapsed_ms": 1392.24,
+      "vector_dimensions": 768,
+      "similarity": {
+        "red_square": 0.7828,
+        "blue_circle": 0.657742
+      },
+      "correct_first": true
+    },
+    {
+      "frame_second": 1,
+      "elapsed_ms": 1279.879,
+      "vector_dimensions": 768,
+      "similarity": {
+        "red_square": 0.666514,
+        "blue_circle": 0.795736
+      },
+      "correct_first": true
+    }
+  ]
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-09T04:51:30.970101+00:00",
+  "purpose": "synthetic engineering smoke test, NOT independent quality benchmark",
+  "model_repo": "litert-community/embeddinggemma-2-text-270m-litert-lm",
+  "model_file": "embeddinggemma-2-text-270m.litertlm",
+  "model_bytes": 164626432,
+  "model_sha256": "2d079ee2f6f066b1f368e8d7c819f55214eaef1d0513b312321901f30ab286fb",
+  "backend": "LiteRT-LM CPU(4 threads), quantized 270M text-only",
+  "versions": {
+    "litert_lm": "0.18.0",
+    "numpy": "2.5.3",
+    "huggingface_hub": "2.2.0"
+  },
+  "machine": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.12.13"
+  },
+  "data": {
+    "dataset": "XBSTACK-local-retrieval-smoke-v1",
+    "provenance": "Synthetic authored scenarios for an engineering smoke test. NOT real user data, a benchmark corpus, or a production RAG comparison",
+    "docs": 10,
+    "queries": 10,
+    "languages": [
+      "en",
+      "zh"
+    ]
+  },
+  "limitations": [
+    "Not physical iPhone 13, iOS simulator, RecalAI, or full RAG pipeline",
+    "Does not evaluate image/audio/video or 740M multimodal models",
+    "Corpus contains 10 authored synthetic short texts, not parsed PDFs or user files",
+    "Not production hybrid FTS + embedding + RRF + reranker evaluation",
+    "One cold launch and one pass; timing varies by load, device and OS"
+  ],
+  "baseline_sqlite_fts5": {
+    "status": "completed",
+    "count": 10,
+    "k": 5,
+    "recall_at_k": 0.7,
+    "mrr": 0.7,
+    "mean_latency_ms": 0.018,
+    "per_query": [
+      {
+        "id": "q01",
+        "lang": "en",
+        "retrieved": [
+          "d01",
+          "d07"
+        ],
+        "gold": [
+          "d01"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.074
+      },
+      {
+        "id": "q02",
+        "lang": "en",
+        "retrieved": [
+          "d03",
+          "d07"
+        ],
+        "gold": [
+          "d03"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.023
+      },
+      {
+        "id": "q03",
+        "lang": "zh",
+        "retrieved": [
+          "d02"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.01
+      },
+      {
+        "id": "q04",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q05",
+        "lang": "en",
+        "retrieved": [
+          "d05"
+        ],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.013
+      },
+      {
+        "id": "q06",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q07",
+        "lang": "en",
+        "retrieved": [
+          "d07"
+        ],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "q08",
+        "lang": "zh",
+        "retrieved": [
+          "d08"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "q09",
+        "lang": "en",
+        "retrieved": [
+          "d09"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.016
+      },
+      {
+        "id": "q10",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      }
+    ]
+  },
+  "embeddinggemma2_litert_cpu": {
+    "status": "completed",
+    "count": 10,
+    "k": 5,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "mean_latency_ms": 59.903,
+    "per_query": [
+      {
+        "id": "q01",
+        "lang": "en",
+        "retrieved": [
+          "d01",
+          "d03",
+          "d07",
+          "d04",
+          "d02"
+        ],
+        "gold": [
+          "d01"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 58.824
+      },
+      {
+        "id": "q02",
+        "lang": "en",
+        "retrieved": [
+          "d03",
+          "d01",
+          "d07",
+          "d04",
+          "d09"
+        ],
+        "gold": [
+          "d03"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 59.457
+      },
+      {
+        "id": "q03",
+        "lang": "zh",
+        "retrieved": [
+          "d02",
+          "d04",
+          "d05",
+          "d06",
+          "d10"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 57.57
+      },
+      {
+        "id": "q04",
+        "lang": "zh",
+        "retrieved": [
+          "d04",
+          "d07",
+          "d02",
+          "d03",
+          "d01"
+        ],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 58.348
+      },
+      {
+        "id": "q05",
+        "lang": "en",
+        "retrieved": [
+          "d05",
+          "d02",
+          "d07",
+          "d06",
+          "d09"
+        ],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 59.145
+      },
+      {
+        "id": "q06",
+        "lang": "zh",
+        "retrieved": [
+          "d06",
+          "d02",
+          "d04",
+          "d05",
+          "d10"
+        ],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.29
+      },
+      {
+        "id": "q07",
+        "lang": "en",
+        "retrieved": [
+          "d07",
+          "d05",
+          "d09",
+          "d08",
+          "d01"
+        ],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 59.416
+      },
+      {
+        "id": "q08",
+        "lang": "zh",
+        "retrieved": [
+          "d08",
+          "d10",
+          "d07",
+          "d06",
+          "d09"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 61.812
+      },
+      {
+        "id": "q09",
+        "lang": "en",
+        "retrieved": [
+          "d09",
+          "d05",
+          "d06",
+          "d02",
+          "d10"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 62.477
+      },
+      {
+        "id": "q10",
+        "lang": "zh",
+        "retrieved": [
+          "d10",
+          "d02",
+          "d06",
+          "d05",
+          "d09"
+        ],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 61.69
+      }
+    ],
+    "vector_dimensions": 768,
+    "model_init_ms": 179.905,
+    "document_embedding_total_ms": 831.36,
+    "process_peak_rss": 349159424,
+    "process_peak_rss_unit": "bytes on macOS; KB on Linux"
+  }
+}

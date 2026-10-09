@@ -1,0 +1,4 @@
+# Text-only runtime only, avoids optional heavy audio/video packages
+sentence-transformers>=6.1.0
+transformers
+numpy

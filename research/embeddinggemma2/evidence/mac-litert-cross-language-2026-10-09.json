@@ -1,0 +1,603 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-10-09T04:52:28.560920+00:00",
+  "purpose": "synthetic engineering smoke test, NOT independent quality benchmark",
+  "model_repo": "litert-community/embeddinggemma-2-text-270m-litert-lm",
+  "model_file": "embeddinggemma-2-text-270m.litertlm",
+  "model_bytes": 164626432,
+  "model_sha256": "2d079ee2f6f066b1f368e8d7c819f55214eaef1d0513b312321901f30ab286fb",
+  "backend": "LiteRT-LM CPU(4 threads), quantized 270M text-only",
+  "versions": {
+    "litert_lm": "0.18.0",
+    "numpy": "2.5.3",
+    "huggingface_hub": "2.2.0"
+  },
+  "machine": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.12.13"
+  },
+  "data": {
+    "dataset": "XBSTACK-cross-language-retrieval-smoke-v2",
+    "provenance": "Synthetic authored scenarios for an engineering smoke test. NOT real user data, a benchmark corpus, or a production RAG comparison Includes eight manually authored cross-language test prompts; still a small synthetic smoke corpus, not a published benchmark.",
+    "docs": 10,
+    "queries": 18,
+    "languages": [
+      "en",
+      "zh"
+    ]
+  },
+  "limitations": [
+    "Not physical iPhone 13, iOS simulator, RecalAI, or full RAG pipeline",
+    "Does not evaluate image/audio/video or 740M multimodal models",
+    "Corpus contains 10 authored synthetic short texts, not parsed PDFs or user files",
+    "Not production hybrid FTS + embedding + RRF + reranker evaluation",
+    "One cold launch and one pass; timing varies by load, device and OS"
+  ],
+  "baseline_sqlite_fts5": {
+    "status": "completed",
+    "count": 18,
+    "k": 5,
+    "recall_at_k": 0.5556,
+    "mrr": 0.5278,
+    "mean_latency_ms": 0.017,
+    "per_query": [
+      {
+        "id": "q01",
+        "lang": "en",
+        "retrieved": [
+          "d01",
+          "d07"
+        ],
+        "gold": [
+          "d01"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.076
+      },
+      {
+        "id": "q02",
+        "lang": "en",
+        "retrieved": [
+          "d03",
+          "d07"
+        ],
+        "gold": [
+          "d03"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.023
+      },
+      {
+        "id": "q03",
+        "lang": "zh",
+        "retrieved": [
+          "d02"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.011
+      },
+      {
+        "id": "q04",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q05",
+        "lang": "en",
+        "retrieved": [
+          "d05"
+        ],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.013
+      },
+      {
+        "id": "q06",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q07",
+        "lang": "en",
+        "retrieved": [
+          "d07"
+        ],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "q08",
+        "lang": "zh",
+        "retrieved": [
+          "d08"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.013
+      },
+      {
+        "id": "q09",
+        "lang": "en",
+        "retrieved": [
+          "d09"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.014
+      },
+      {
+        "id": "q10",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q11",
+        "lang": "en",
+        "retrieved": [
+          "d05",
+          "d02",
+          "d01",
+          "d09",
+          "d03"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.03
+      },
+      {
+        "id": "q12",
+        "lang": "en",
+        "retrieved": [
+          "d07",
+          "d03"
+        ],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.021
+      },
+      {
+        "id": "q13",
+        "lang": "en",
+        "retrieved": [
+          "d03",
+          "d05"
+        ],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "q14",
+        "lang": "en",
+        "retrieved": [
+          "d05",
+          "d03",
+          "d09"
+        ],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.024
+      },
+      {
+        "id": "q15",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.004
+      },
+      {
+        "id": "q16",
+        "lang": "zh",
+        "retrieved": [],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.0,
+        "latency_ms": 0.003
+      },
+      {
+        "id": "q17",
+        "lang": "zh",
+        "retrieved": [
+          "d08"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.011
+      },
+      {
+        "id": "q18",
+        "lang": "zh",
+        "retrieved": [
+          "d09"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.009
+      }
+    ]
+  },
+  "embeddinggemma2_litert_cpu": {
+    "status": "completed",
+    "count": 18,
+    "k": 5,
+    "recall_at_k": 1.0,
+    "mrr": 1.0,
+    "mean_latency_ms": 60.857,
+    "per_query": [
+      {
+        "id": "q01",
+        "lang": "en",
+        "retrieved": [
+          "d01",
+          "d03",
+          "d07",
+          "d04",
+          "d02"
+        ],
+        "gold": [
+          "d01"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 62.005
+      },
+      {
+        "id": "q02",
+        "lang": "en",
+        "retrieved": [
+          "d03",
+          "d01",
+          "d07",
+          "d04",
+          "d09"
+        ],
+        "gold": [
+          "d03"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.936
+      },
+      {
+        "id": "q03",
+        "lang": "zh",
+        "retrieved": [
+          "d02",
+          "d04",
+          "d05",
+          "d06",
+          "d10"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.687
+      },
+      {
+        "id": "q04",
+        "lang": "zh",
+        "retrieved": [
+          "d04",
+          "d07",
+          "d02",
+          "d03",
+          "d01"
+        ],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.25
+      },
+      {
+        "id": "q05",
+        "lang": "en",
+        "retrieved": [
+          "d05",
+          "d02",
+          "d07",
+          "d06",
+          "d09"
+        ],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.813
+      },
+      {
+        "id": "q06",
+        "lang": "zh",
+        "retrieved": [
+          "d06",
+          "d02",
+          "d04",
+          "d05",
+          "d10"
+        ],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.301
+      },
+      {
+        "id": "q07",
+        "lang": "en",
+        "retrieved": [
+          "d07",
+          "d05",
+          "d09",
+          "d08",
+          "d01"
+        ],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.922
+      },
+      {
+        "id": "q08",
+        "lang": "zh",
+        "retrieved": [
+          "d08",
+          "d10",
+          "d07",
+          "d06",
+          "d09"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.618
+      },
+      {
+        "id": "q09",
+        "lang": "en",
+        "retrieved": [
+          "d09",
+          "d05",
+          "d06",
+          "d02",
+          "d10"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 59.466
+      },
+      {
+        "id": "q10",
+        "lang": "zh",
+        "retrieved": [
+          "d10",
+          "d02",
+          "d06",
+          "d05",
+          "d09"
+        ],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 62.626
+      },
+      {
+        "id": "q11",
+        "lang": "en",
+        "retrieved": [
+          "d02",
+          "d05",
+          "d06",
+          "d10",
+          "d09"
+        ],
+        "gold": [
+          "d02"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 62.242
+      },
+      {
+        "id": "q12",
+        "lang": "en",
+        "retrieved": [
+          "d04",
+          "d07",
+          "d03",
+          "d01",
+          "d09"
+        ],
+        "gold": [
+          "d04"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.414
+      },
+      {
+        "id": "q13",
+        "lang": "en",
+        "retrieved": [
+          "d06",
+          "d02",
+          "d05",
+          "d04",
+          "d07"
+        ],
+        "gold": [
+          "d06"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.103
+      },
+      {
+        "id": "q14",
+        "lang": "en",
+        "retrieved": [
+          "d10",
+          "d05",
+          "d02",
+          "d09",
+          "d06"
+        ],
+        "gold": [
+          "d10"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 59.215
+      },
+      {
+        "id": "q15",
+        "lang": "zh",
+        "retrieved": [
+          "d07",
+          "d05",
+          "d02",
+          "d08",
+          "d06"
+        ],
+        "gold": [
+          "d07"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.917
+      },
+      {
+        "id": "q16",
+        "lang": "zh",
+        "retrieved": [
+          "d05",
+          "d02",
+          "d07",
+          "d04",
+          "d06"
+        ],
+        "gold": [
+          "d05"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 62.1
+      },
+      {
+        "id": "q17",
+        "lang": "zh",
+        "retrieved": [
+          "d08",
+          "d10",
+          "d07",
+          "d06",
+          "d02"
+        ],
+        "gold": [
+          "d08"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 60.513
+      },
+      {
+        "id": "q18",
+        "lang": "zh",
+        "retrieved": [
+          "d09",
+          "d06",
+          "d02",
+          "d05",
+          "d10"
+        ],
+        "gold": [
+          "d09"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 61.304
+      }
+    ],
+    "vector_dimensions": 768,
+    "model_init_ms": 213.216,
+    "document_embedding_total_ms": 804.48,
+    "process_peak_rss": 343572480,
+    "process_peak_rss_unit": "bytes on macOS; KB on Linux"
+  }
+}

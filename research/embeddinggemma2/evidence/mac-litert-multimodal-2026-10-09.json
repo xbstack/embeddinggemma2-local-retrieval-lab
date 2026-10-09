@@ -1,0 +1,151 @@
+{
+  "generated_utc": "2026-10-09T04:56:09.713973+00:00",
+  "status": "synthetic_modality_io_only",
+  "model_repo": "litert-community/embeddinggemma-2-740m-litert-lm",
+  "model_file": "embeddinggemma-2-740m.litertlm",
+  "model_bytes": 484622336,
+  "model_sha256": "e7a8a2204b91e0f96e92960e84a09a89212e1633dcb7575a9bf3378b4df77f4c",
+  "runtime": {
+    "litert_lm": "0.18.0",
+    "hardware": "arm64",
+    "os": "Darwin",
+    "backend": "CPU four threads all encoders"
+  },
+  "dataset": {
+    "status": "synthetic_fixtures_only",
+    "created_by": "Pillow geometric drawings + macOS speech synthesis (Samantha)",
+    "labels": [
+      {
+        "id": "red-square",
+        "text": "A bright red square on a white background",
+        "image": "red-square.png",
+        "speech": "red-square.wav"
+      },
+      {
+        "id": "blue-circle",
+        "text": "A blue circle on a white background",
+        "image": "blue-circle.png",
+        "speech": "blue-circle.wav"
+      }
+    ],
+    "no_claim": "These assets are not representative real-world image/audio retrieval samples."
+  },
+  "limitations": [
+    "No real-world retrieval accuracy evaluation",
+    "No independent image/audio annotation of natural samples",
+    "No video-frame pipeline or iPhone 13 physical device",
+    "No full production RAG/hybrid/rerank comparison"
+  ],
+  "items": [
+    {
+      "id": "red-square",
+      "modality": "text",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 82.335
+    },
+    {
+      "id": "red-square",
+      "modality": "image",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 1362.897
+    },
+    {
+      "id": "red-square",
+      "modality": "audio",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 186.725
+    },
+    {
+      "id": "blue-circle",
+      "modality": "text",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 61.111
+    },
+    {
+      "id": "blue-circle",
+      "modality": "image",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 975.79
+    },
+    {
+      "id": "blue-circle",
+      "modality": "audio",
+      "status": "completed",
+      "dimensions": 768,
+      "elapsed_ms": 158.415
+    }
+  ],
+  "pairwise_cosine": [
+    {
+      "source_modality": "image",
+      "source_id": "red-square",
+      "query_modality": "text",
+      "query_id": "red-square",
+      "cosine": 0.805209,
+      "same_synthetic_label": true
+    },
+    {
+      "source_modality": "image",
+      "source_id": "red-square",
+      "query_modality": "text",
+      "query_id": "blue-circle",
+      "cosine": 0.673467,
+      "same_synthetic_label": false
+    },
+    {
+      "source_modality": "image",
+      "source_id": "blue-circle",
+      "query_modality": "text",
+      "query_id": "red-square",
+      "cosine": 0.672283,
+      "same_synthetic_label": false
+    },
+    {
+      "source_modality": "image",
+      "source_id": "blue-circle",
+      "query_modality": "text",
+      "query_id": "blue-circle",
+      "cosine": 0.79528,
+      "same_synthetic_label": true
+    },
+    {
+      "source_modality": "audio",
+      "source_id": "red-square",
+      "query_modality": "text",
+      "query_id": "red-square",
+      "cosine": 0.857802,
+      "same_synthetic_label": true
+    },
+    {
+      "source_modality": "audio",
+      "source_id": "red-square",
+      "query_modality": "text",
+      "query_id": "blue-circle",
+      "cosine": 0.630185,
+      "same_synthetic_label": false
+    },
+    {
+      "source_modality": "audio",
+      "source_id": "blue-circle",
+      "query_modality": "text",
+      "query_id": "red-square",
+      "cosine": 0.628279,
+      "same_synthetic_label": false
+    },
+    {
+      "source_modality": "audio",
+      "source_id": "blue-circle",
+      "query_modality": "text",
+      "query_id": "blue-circle",
+      "cosine": 0.868294,
+      "same_synthetic_label": true
+    }
+  ],
+  "peak_rss_raw": 1326645248,
+  "peak_rss_units": "bytes on macOS, KB on Linux; includes process and Python"
+}

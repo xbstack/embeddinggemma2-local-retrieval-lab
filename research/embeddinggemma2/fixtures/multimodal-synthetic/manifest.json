@@ -1,0 +1,19 @@
+{
+  "status": "synthetic_fixtures_only",
+  "created_by": "Pillow geometric drawings + macOS speech synthesis (Samantha)",
+  "labels": [
+    {
+      "id": "red-square",
+      "text": "A bright red square on a white background",
+      "image": "red-square.png",
+      "speech": "red-square.wav"
+    },
+    {
+      "id": "blue-circle",
+      "text": "A blue circle on a white background",
+      "image": "blue-circle.png",
+      "speech": "blue-circle.wav"
+    }
+  ],
+  "no_claim": "These assets are not representative real-world image/audio retrieval samples."
+}

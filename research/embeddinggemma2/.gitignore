@@ -1,0 +1,9 @@
+.venv/
+.venv311/
+.venv-litert/
+__pycache__/
+*.pyc
+results/
+fixtures/multimodal-synthetic/*.wav
+fixtures/multimodal-synthetic/*.aiff
+fixtures/multimodal-synthetic/*.mp4

@@ -1,0 +1,139 @@
+{
+  "dataset": "XBSTACK-local-retrieval-smoke-v1",
+  "provenance": "Synthetic authored scenarios for an engineering smoke test. NOT real user data, a benchmark corpus, or a production RAG comparison",
+  "created": "2026-10-09",
+  "documents": [
+    {
+      "id": "d01",
+      "lang": "en",
+      "text": "The API gateway returns 429 Too Many Requests after the per-minute token budget is exhausted. Use bounded exponential backoff and respect retry-after."
+    },
+    {
+      "id": "d02",
+      "lang": "zh",
+      "text": "导入 PDF 后先保存原件，完成文本解析和分块，写入 SQLite FTS5。语义向量计算可以在后台执行，不要阻塞首次搜索。"
+    },
+    {
+      "id": "d03",
+      "lang": "en",
+      "text": "For an MCP tool call timeout, log request ID and server response status, then retry only idempotent operations. A completed payment must not be replayed."
+    },
+    {
+      "id": "d04",
+      "lang": "zh",
+      "text": "个人助手执行删除文件、发邮件、购买等高风险动作前，必须校验权限并请求用户批准，还需要生成审计记录。"
+    },
+    {
+      "id": "d05",
+      "lang": "en",
+      "text": "An offline photo index stores image embeddings in local SQLite. Text queries can retrieve matching photos if query and image embeddings share the same semantic space."
+    },
+    {
+      "id": "d06",
+      "lang": "zh",
+      "text": "音频转录与声学语义检索是不同任务。无需先转录的音频向量检索必须有专门音频编码器支持，并实际测试准确率。"
+    },
+    {
+      "id": "d07",
+      "lang": "en",
+      "text": "Personal long-term memory should hold stable preferences, not transient hotel quotes. Current task state tracks deadlines, permissions, and pending approval."
+    },
+    {
+      "id": "d08",
+      "lang": "zh",
+      "text": "iPhone 13 端侧模型加载要控制峰值内存，测量冷启动延迟、常驻内存、发热与电池消耗。Mac 测试数据不能代表 iPhone 结果。"
+    },
+    {
+      "id": "d09",
+      "lang": "en",
+      "text": "A full multilingual RAG evaluation needs retrieval recall at K, mean reciprocal rank, cross-language questions and adversarial negatives."
+    },
+    {
+      "id": "d10",
+      "lang": "zh",
+      "text": "索引模型升级时，旧模型生成的向量不能直接与新模型的向量混合比较，应保留旧索引并进行版本迁移和回滚测试。"
+    }
+  ],
+  "queries": [
+    {
+      "id": "q01",
+      "query": "what should happen after API rate limiting?",
+      "relevant": [
+        "d01"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "q02",
+      "query": "MCP timeout should payment tool call be repeated?",
+      "relevant": [
+        "d03"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "q03",
+      "query": "PDF 导入后什么时候可以立即搜索？",
+      "relevant": [
+        "d02"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "q04",
+      "query": "高风险操作如何进行用户授权？",
+      "relevant": [
+        "d04"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "q05",
+      "query": "offline semantic photo search on device",
+      "relevant": [
+        "d05"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "q06",
+      "query": "有没有无需先转录就搜索音频的方式？",
+      "relevant": [
+        "d06"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "q07",
+      "query": "Should hotel price offers go into long-term memory?",
+      "relevant": [
+        "d07"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "q08",
+      "query": "iPhone 13 和 Mac 模型内存表现能直接比较吗？",
+      "relevant": [
+        "d08"
+      ],
+      "language": "zh"
+    },
+    {
+      "id": "q09",
+      "query": "How to evaluate cross language RAG retrieval?",
+      "relevant": [
+        "d09"
+      ],
+      "language": "en"
+    },
+    {
+      "id": "q10",
+      "query": "旧向量索引换模型后能否直接用？",
+      "relevant": [
+        "d10"
+      ],
+      "language": "zh"
+    }
+  ]
+}
