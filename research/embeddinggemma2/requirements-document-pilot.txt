@@ -1,0 +1,4 @@
+# Install after requirements-litert.txt in the dedicated embeddinggemma2 venv.
+pypdf==6.20.0
+python-docx==1.2.0
+reportlab==5.0.1

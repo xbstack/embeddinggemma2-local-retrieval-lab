@@ -1,0 +1,965 @@
+{
+  "generated_utc": "2026-10-10T02:13:04.418815+00:00",
+  "scope": "real published article text; author-labelled cross-language query pilot",
+  "model": {
+    "repo": "litert-community/embeddinggemma-2-text-270m-litert-lm",
+    "sha256": "2d079ee2f6f066b1f368e8d7c819f55214eaef1d0513b312321901f30ab286fb",
+    "quantization": "LiteRT-LM 270M text-only"
+  },
+  "hardware": {
+    "os": "Darwin",
+    "arch": "arm64",
+    "python": "3.12.13"
+  },
+  "documents": 16,
+  "queries": 16,
+  "provenance": [
+    {
+      "id": "mcp-pagination-zh",
+      "path": "src/content/ai/mcp-tool-call-truncated-fix.md",
+      "sha256": "b4ae0534b659bd8c5837632fea49f2fc509c7e0cdf920ad58ab4cd4650aba1a3",
+      "chars_used": 1800
+    },
+    {
+      "id": "mcp-pagination-en",
+      "path": "src/content/ai/en/mcp-tool-call-truncated-fix.md",
+      "sha256": "960954600f92de9a33670e39c3b268488e3ed13eaa7975509d54484a772572e6",
+      "chars_used": 1800
+    },
+    {
+      "id": "n8n-errors-zh",
+      "path": "src/content/ai/n8n-ai-workflow-error-handling.md",
+      "sha256": "c78bb0b882dbe02b8df62dd4a267ca7a9ac7ae4e191520525e1ebd651b56f49b",
+      "chars_used": 1800
+    },
+    {
+      "id": "n8n-errors-en",
+      "path": "src/content/ai/en/n8n-ai-workflow-error-handling.md",
+      "sha256": "e59f34ebf7d5f68765b30e23a5d05dd0f30069e3774f1fbe496d9be560eaab51",
+      "chars_used": 1800
+    },
+    {
+      "id": "langgraph-approval-zh",
+      "path": "src/content/ai/langgraph-human-in-the-loop-approval.md",
+      "sha256": "881ca6aa210bc3e945b4efb3d6db480911aa45e0da111897df6d4b5ce76a3502",
+      "chars_used": 1800
+    },
+    {
+      "id": "langgraph-approval-en",
+      "path": "src/content/ai/en/langgraph-human-in-the-loop-approval.md",
+      "sha256": "646898321e2ce7d79e1896d30b26b36f724750d59cd206fc391f94f1d2f2dda9",
+      "chars_used": 1800
+    },
+    {
+      "id": "checkpoint-zh",
+      "path": "src/content/ai/langgraph-checkpointer-memory-sqlite-redis.md",
+      "sha256": "06e7e2594c2e2c7d82def1ddbfd6b923fa72447d6207544b37345085bcd6a902",
+      "chars_used": 1800
+    },
+    {
+      "id": "checkpoint-en",
+      "path": "src/content/ai/en/langgraph-checkpointer-memory-sqlite-redis.md",
+      "sha256": "80112abf3a7f6f5d5a1bf98c0c5ba40df994228cde2213e81ac28cc3372da5af",
+      "chars_used": 1800
+    },
+    {
+      "id": "adk-delete-zh",
+      "path": "src/content/ai/google-adk-delete-session-memory-retained.md",
+      "sha256": "befdaa0196e47c3f5414de4a04a621e1bc91601e5299bd92d932823b0585a3e2",
+      "chars_used": 1800
+    },
+    {
+      "id": "adk-delete-en",
+      "path": "src/content/ai/en/google-adk-delete-session-memory-retained.md",
+      "sha256": "d3081e2940037de781cbe08f5587368df0d80d7a6f4d25754a4b85c833d50831",
+      "chars_used": 1800
+    },
+    {
+      "id": "context-zh",
+      "path": "src/content/ai/context-engineering-agent-cost-memory-tools.md",
+      "sha256": "25883d392e9b3d4853366b70c02b4288b44c9cb815a40a5bbb0e1b5df0402c47",
+      "chars_used": 1800
+    },
+    {
+      "id": "context-en",
+      "path": "src/content/ai/en/context-engineering-agent-cost-memory-tools.md",
+      "sha256": "72fdbe411cdd84f789940e86f80c910793addbde640ffe75e5584c47fba6feb5",
+      "chars_used": 1800
+    },
+    {
+      "id": "responses-stream-zh",
+      "path": "src/content/ai/openai-responses-api-stream-abort-tool-call-lost.md",
+      "sha256": "d4c3920e0e3f0067bdcc1f286e34aad91db942b4628ead192be7c55790fee8ed",
+      "chars_used": 1800
+    },
+    {
+      "id": "responses-stream-en",
+      "path": "src/content/ai/en/openai-responses-api-stream-abort-tool-call-lost.md",
+      "sha256": "00e4d430afd4ec2d1c9dac20a4625c27087d34bace7f3d5cd3fe913d483e6b86",
+      "chars_used": 1800
+    },
+    {
+      "id": "tool-authorization-zh",
+      "path": "src/content/ai/ai-agent-tool-authorization-policy-gate.md",
+      "sha256": "df65b96b1f33fc180814406847babed808f184af5af8e75490b92c9ec9da8ee8",
+      "chars_used": 1800
+    },
+    {
+      "id": "tool-authorization-en",
+      "path": "src/content/ai/en/ai-agent-tool-authorization-policy-gate.md",
+      "sha256": "79ae6095baf5fb9877d51dbd43bdefec0e10dc9796727b6253ffad35c45c5672",
+      "chars_used": 1800
+    }
+  ],
+  "fts": {
+    "status": "completed",
+    "count": 16,
+    "k": 5,
+    "recall_at_k": 0.9375,
+    "mrr": 0.4871,
+    "mean_latency_ms": 0.04,
+    "per_query": [
+      {
+        "id": "mcp-pagination-q-en",
+        "lang": "en",
+        "retrieved": [
+          "mcp-pagination-en",
+          "context-en",
+          "adk-delete-en",
+          "tool-authorization-en",
+          "mcp-pagination-zh"
+        ],
+        "gold": [
+          "mcp-pagination-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.2,
+        "latency_ms": 0.183
+      },
+      {
+        "id": "mcp-pagination-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "mcp-pagination-zh",
+          "mcp-pagination-en",
+          "context-zh",
+          "context-en"
+        ],
+        "gold": [
+          "mcp-pagination-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "n8n-errors-q-en",
+        "lang": "en",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en",
+          "responses-stream-en",
+          "langgraph-approval-en",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "n8n-errors-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.038
+      },
+      {
+        "id": "n8n-errors-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en"
+        ],
+        "gold": [
+          "n8n-errors-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.012
+      },
+      {
+        "id": "langgraph-approval-q-en",
+        "lang": "en",
+        "retrieved": [
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "checkpoint-en",
+          "checkpoint-zh",
+          "tool-authorization-en"
+        ],
+        "gold": [
+          "langgraph-approval-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.036
+      },
+      {
+        "id": "langgraph-approval-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "langgraph-approval-zh",
+          "checkpoint-zh",
+          "checkpoint-en",
+          "langgraph-approval-en"
+        ],
+        "gold": [
+          "langgraph-approval-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.25,
+        "latency_ms": 0.013
+      },
+      {
+        "id": "checkpoint-q-en",
+        "lang": "en",
+        "retrieved": [
+          "checkpoint-en",
+          "checkpoint-zh",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "checkpoint-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.038
+      },
+      {
+        "id": "checkpoint-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "checkpoint-zh",
+          "checkpoint-en",
+          "langgraph-approval-zh",
+          "langgraph-approval-en",
+          "adk-delete-zh"
+        ],
+        "gold": [
+          "checkpoint-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.028
+      },
+      {
+        "id": "adk-delete-q-en",
+        "lang": "en",
+        "retrieved": [
+          "adk-delete-en",
+          "adk-delete-zh",
+          "mcp-pagination-en",
+          "context-zh",
+          "context-en"
+        ],
+        "gold": [
+          "adk-delete-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.042
+      },
+      {
+        "id": "adk-delete-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "adk-delete-zh",
+          "adk-delete-en",
+          "context-zh",
+          "context-en"
+        ],
+        "gold": [
+          "adk-delete-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "context-q-en",
+        "lang": "en",
+        "retrieved": [
+          "context-en",
+          "context-zh",
+          "mcp-pagination-en",
+          "checkpoint-zh",
+          "adk-delete-en"
+        ],
+        "gold": [
+          "context-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.045
+      },
+      {
+        "id": "context-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "mcp-pagination-zh",
+          "checkpoint-zh",
+          "context-zh",
+          "langgraph-approval-zh",
+          "n8n-errors-zh"
+        ],
+        "gold": [
+          "context-en"
+        ],
+        "recall_at_k": 0.0,
+        "rr": 0.14285714285714285,
+        "latency_ms": 0.026
+      },
+      {
+        "id": "responses-stream-q-en",
+        "lang": "en",
+        "retrieved": [
+          "responses-stream-en",
+          "responses-stream-zh",
+          "tool-authorization-en",
+          "tool-authorization-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "responses-stream-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.05
+      },
+      {
+        "id": "responses-stream-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "responses-stream-zh",
+          "responses-stream-en",
+          "n8n-errors-zh",
+          "adk-delete-zh",
+          "langgraph-approval-en"
+        ],
+        "gold": [
+          "responses-stream-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.018
+      },
+      {
+        "id": "tool-authorization-q-en",
+        "lang": "en",
+        "retrieved": [
+          "tool-authorization-zh",
+          "tool-authorization-en",
+          "langgraph-approval-en",
+          "checkpoint-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "tool-authorization-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.045
+      },
+      {
+        "id": "tool-authorization-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "context-zh",
+          "checkpoint-zh",
+          "context-en",
+          "mcp-pagination-zh",
+          "tool-authorization-en"
+        ],
+        "gold": [
+          "tool-authorization-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.2,
+        "latency_ms": 0.021
+      }
+    ]
+  },
+  "embedding": {
+    "status": "completed",
+    "count": 16,
+    "k": 5,
+    "recall_at_k": 1.0,
+    "mrr": 0.5938,
+    "mean_latency_ms": 0.0,
+    "per_query": [
+      {
+        "id": "mcp-pagination-q-en",
+        "lang": "en",
+        "retrieved": [
+          "mcp-pagination-zh",
+          "mcp-pagination-en",
+          "tool-authorization-en",
+          "tool-authorization-zh",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "mcp-pagination-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.003
+      },
+      {
+        "id": "mcp-pagination-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "mcp-pagination-zh",
+          "mcp-pagination-en",
+          "responses-stream-zh",
+          "tool-authorization-zh",
+          "context-zh"
+        ],
+        "gold": [
+          "mcp-pagination-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "n8n-errors-q-en",
+        "lang": "en",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "n8n-errors-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "n8n-errors-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en",
+          "langgraph-approval-zh",
+          "tool-authorization-zh",
+          "responses-stream-zh"
+        ],
+        "gold": [
+          "n8n-errors-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.001
+      },
+      {
+        "id": "langgraph-approval-q-en",
+        "lang": "en",
+        "retrieved": [
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "checkpoint-en",
+          "checkpoint-zh",
+          "tool-authorization-en"
+        ],
+        "gold": [
+          "langgraph-approval-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "langgraph-approval-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "langgraph-approval-zh",
+          "langgraph-approval-en",
+          "checkpoint-zh",
+          "checkpoint-en",
+          "tool-authorization-zh"
+        ],
+        "gold": [
+          "langgraph-approval-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "checkpoint-q-en",
+        "lang": "en",
+        "retrieved": [
+          "checkpoint-en",
+          "checkpoint-zh",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "checkpoint-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "checkpoint-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "checkpoint-en",
+          "checkpoint-zh",
+          "langgraph-approval-zh",
+          "langgraph-approval-en",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "checkpoint-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "adk-delete-q-en",
+        "lang": "en",
+        "retrieved": [
+          "adk-delete-en",
+          "adk-delete-zh",
+          "checkpoint-en",
+          "mcp-pagination-en",
+          "responses-stream-en"
+        ],
+        "gold": [
+          "adk-delete-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "adk-delete-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "adk-delete-zh",
+          "adk-delete-en",
+          "context-zh",
+          "responses-stream-en",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "adk-delete-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "context-q-en",
+        "lang": "en",
+        "retrieved": [
+          "context-en",
+          "context-zh",
+          "checkpoint-en",
+          "adk-delete-en",
+          "checkpoint-zh"
+        ],
+        "gold": [
+          "context-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "context-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "context-zh",
+          "context-en",
+          "mcp-pagination-zh",
+          "checkpoint-zh",
+          "tool-authorization-zh"
+        ],
+        "gold": [
+          "context-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "responses-stream-q-en",
+        "lang": "en",
+        "retrieved": [
+          "responses-stream-en",
+          "responses-stream-zh",
+          "mcp-pagination-en",
+          "mcp-pagination-zh",
+          "tool-authorization-en"
+        ],
+        "gold": [
+          "responses-stream-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "responses-stream-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "responses-stream-zh",
+          "responses-stream-en",
+          "mcp-pagination-zh",
+          "mcp-pagination-en",
+          "langgraph-approval-zh"
+        ],
+        "gold": [
+          "responses-stream-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "tool-authorization-q-en",
+        "lang": "en",
+        "retrieved": [
+          "tool-authorization-en",
+          "tool-authorization-zh",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "tool-authorization-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      },
+      {
+        "id": "tool-authorization-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "tool-authorization-zh",
+          "tool-authorization-en",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "context-zh"
+        ],
+        "gold": [
+          "tool-authorization-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.0
+      }
+    ]
+  },
+  "hybrid_rrf_60": {
+    "status": "completed",
+    "count": 16,
+    "k": 5,
+    "recall_at_k": 1.0,
+    "mrr": 0.5365,
+    "mean_latency_ms": 0.052,
+    "per_query": [
+      {
+        "id": "mcp-pagination-q-en",
+        "lang": "en",
+        "retrieved": [
+          "mcp-pagination-en",
+          "mcp-pagination-zh",
+          "tool-authorization-en",
+          "context-en",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "mcp-pagination-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.299
+      },
+      {
+        "id": "mcp-pagination-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "mcp-pagination-zh",
+          "mcp-pagination-en",
+          "context-zh",
+          "context-en",
+          "responses-stream-zh"
+        ],
+        "gold": [
+          "mcp-pagination-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.028
+      },
+      {
+        "id": "n8n-errors-q-en",
+        "lang": "en",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en",
+          "langgraph-approval-en",
+          "responses-stream-en",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "n8n-errors-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.042
+      },
+      {
+        "id": "n8n-errors-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "n8n-errors-zh",
+          "n8n-errors-en",
+          "langgraph-approval-zh",
+          "tool-authorization-zh",
+          "responses-stream-zh"
+        ],
+        "gold": [
+          "n8n-errors-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.015
+      },
+      {
+        "id": "langgraph-approval-q-en",
+        "lang": "en",
+        "retrieved": [
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "checkpoint-en",
+          "checkpoint-zh",
+          "tool-authorization-en"
+        ],
+        "gold": [
+          "langgraph-approval-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.045
+      },
+      {
+        "id": "langgraph-approval-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "langgraph-approval-zh",
+          "checkpoint-zh",
+          "langgraph-approval-en",
+          "checkpoint-en",
+          "tool-authorization-zh"
+        ],
+        "gold": [
+          "langgraph-approval-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.3333333333333333,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "checkpoint-q-en",
+        "lang": "en",
+        "retrieved": [
+          "checkpoint-en",
+          "checkpoint-zh",
+          "langgraph-approval-en",
+          "langgraph-approval-zh",
+          "mcp-pagination-en"
+        ],
+        "gold": [
+          "checkpoint-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.051
+      },
+      {
+        "id": "checkpoint-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "checkpoint-en",
+          "checkpoint-zh",
+          "langgraph-approval-zh",
+          "langgraph-approval-en",
+          "adk-delete-zh"
+        ],
+        "gold": [
+          "checkpoint-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 1.0,
+        "latency_ms": 0.027
+      },
+      {
+        "id": "adk-delete-q-en",
+        "lang": "en",
+        "retrieved": [
+          "adk-delete-en",
+          "adk-delete-zh",
+          "mcp-pagination-en",
+          "checkpoint-en",
+          "context-zh"
+        ],
+        "gold": [
+          "adk-delete-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.04
+      },
+      {
+        "id": "adk-delete-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "adk-delete-zh",
+          "adk-delete-en",
+          "context-zh",
+          "context-en",
+          "responses-stream-en"
+        ],
+        "gold": [
+          "adk-delete-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.017
+      },
+      {
+        "id": "context-q-en",
+        "lang": "en",
+        "retrieved": [
+          "context-en",
+          "context-zh",
+          "adk-delete-en",
+          "checkpoint-zh",
+          "checkpoint-en"
+        ],
+        "gold": [
+          "context-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.048
+      },
+      {
+        "id": "context-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "context-zh",
+          "mcp-pagination-zh",
+          "checkpoint-zh",
+          "context-en",
+          "langgraph-approval-zh"
+        ],
+        "gold": [
+          "context-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.25,
+        "latency_ms": 0.035
+      },
+      {
+        "id": "responses-stream-q-en",
+        "lang": "en",
+        "retrieved": [
+          "responses-stream-en",
+          "responses-stream-zh",
+          "mcp-pagination-en",
+          "tool-authorization-en",
+          "tool-authorization-zh"
+        ],
+        "gold": [
+          "responses-stream-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.063
+      },
+      {
+        "id": "responses-stream-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "responses-stream-zh",
+          "responses-stream-en",
+          "langgraph-approval-en",
+          "n8n-errors-zh",
+          "adk-delete-zh"
+        ],
+        "gold": [
+          "responses-stream-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.022
+      },
+      {
+        "id": "tool-authorization-q-en",
+        "lang": "en",
+        "retrieved": [
+          "tool-authorization-en",
+          "tool-authorization-zh",
+          "langgraph-approval-en",
+          "mcp-pagination-en",
+          "checkpoint-zh"
+        ],
+        "gold": [
+          "tool-authorization-zh"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.049
+      },
+      {
+        "id": "tool-authorization-q-zh",
+        "lang": "zh",
+        "retrieved": [
+          "context-zh",
+          "tool-authorization-en",
+          "tool-authorization-zh",
+          "langgraph-approval-en",
+          "langgraph-approval-zh"
+        ],
+        "gold": [
+          "tool-authorization-en"
+        ],
+        "recall_at_k": 1.0,
+        "rr": 0.5,
+        "latency_ms": 0.029
+      }
+    ]
+  },
+  "index_ms": 14227.44,
+  "peak_rss": 563970048,
+  "limitations": [
+    "Real published Markdown texts, not raw PDF/DOCX/OCR or private user documents",
+    "Only the first 1800 normalized characters of each article are indexed",
+    "Author-written queries/gold labels; not independent blinded annotation",
+    "Only 8 topics, 16 localized articles, 16 cross-language queries",
+    "No separate reranker, OCR, RAG generation, native iPhone measurement",
+    "Embedding query times in these cached-rank evaluations exclude model inference",
+    "FTS baseline is unicode61 without Chinese segmentation"
+  ]
+}
