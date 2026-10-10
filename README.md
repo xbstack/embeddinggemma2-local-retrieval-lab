@@ -18,6 +18,7 @@ We converted 16 genuinely published XBSTACK bilingual technical articles into 8 
 RRF did not improve pure-embedding MRR in this dataset. 256d matched 768d only for this small author-labelled parent-document retrieval test, and uses one-third as many raw float32 vector coordinate bytes. No phone latency, Reranker, OCR, generated answer correctness or natural user-document benchmark is claimed.
 
 - [Complete lab report](research/embeddinggemma2/document-pilot-report-2026-10-10.md)
+- [English XBSTACK engineering analysis](https://www.xbstack.com/en/ai/embeddinggemma-2-local-retrieval-test/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_local_retrieval&utm_content=repository_readme) | [中文实测文章](https://www.xbstack.com/ai/embeddinggemma-2-local-retrieval-test/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_local_retrieval&utm_content=repository_readme)
 - [Reproduction code](research/embeddinggemma2/document_format_chunk_pilot.py)
 - [Full per-query evidence and source hashes](research/embeddinggemma2/evidence/mac-litert-converted-pdf-docx-chunks-2026-10-10.json)
 - [Dependency list](research/embeddinggemma2/requirements-document-pilot.txt)
