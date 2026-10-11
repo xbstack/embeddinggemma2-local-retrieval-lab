@@ -19,6 +19,12 @@ RRF did not improve pure-embedding MRR in this dataset. 256d matched 768d only f
 
 - [Complete lab report](research/embeddinggemma2/document-pilot-report-2026-10-10.md)
 - [English XBSTACK engineering analysis](https://www.xbstack.com/en/ai/embeddinggemma-2-local-retrieval-test/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_local_retrieval&utm_content=repository_readme) | [中文实测文章](https://www.xbstack.com/ai/embeddinggemma-2-local-retrieval-test/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_local_retrieval&utm_content=repository_readme)
+### Corpus articles referenced in the retrieval experiment
+
+- [MCP tool result truncation: practical pagination and cursor fixes](https://www.xbstack.com/en/ai/mcp-tool-call-truncated-fix/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_corpus&utm_content=mcp_source_article) — one real published-article source topic used in this corpus.
+- [n8n AI Error Workflow: practical error handling](https://www.xbstack.com/en/ai/n8n-ai-workflow-error-handling/?utm_source=github&utm_medium=referral&utm_campaign=embeddinggemma2_corpus&utm_content=n8n_source_article) — another indexed published-article source topic.
+
+The original Markdown snapshots and exact hashes retained in this repository, rather than the evolving live pages, define the reproducible benchmark inputs.
 - [Reproduction code](research/embeddinggemma2/document_format_chunk_pilot.py)
 - [Full per-query evidence and source hashes](research/embeddinggemma2/evidence/mac-litert-converted-pdf-docx-chunks-2026-10-10.json)
 - [Dependency list](research/embeddinggemma2/requirements-document-pilot.txt)
