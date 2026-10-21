@@ -2,6 +2,13 @@
 
 Real, reproducible Apple Silicon Mac CPU inference with quantized Google LiteRT-LM. **Not an iPhone 13 or production RAG benchmark.**
 
+## Scope boundary: LiteRT-LM inference vs LiteRT Tensor API graph authoring (Oct 2026)
+
+**Do not confuse this repository's quantized LiteRT-LM inference tests with the separate LiteRT Tensor API.** This lab measures a small set of EmbeddingGemma 2 retrieval tasks on Mac CPU via LiteRT-LM. The newer **LiteRT Tensor API** is a C++ computation-graph authoring interface with explicitly different supported execution routes: XNNPACK CPU, TFLite/CompiledModel, and the documented ML Drift GPU route. Neither this lab nor that API's existence demonstrates a particular phone's NPU execution, driver/operator coverage, memory use, or speedup. Those require a target-device trace and pinned model/backend.
+
+- [Google official Tensor API introduction](https://developers.googleblog.com/en/native-model-authoring-for-edge-with-litert-tensor-api/) and [LiteRT tensor source README](https://github.com/google-ai-edge/LiteRT/blob/main/tensor/README.md).
+- [Bilingual XBSTACK C++ Tensor API execution-path decision guide](https://www.xbstack.com/en/ai/litert-tensor-api-cpp-xnnpack-gpu-npu/?utm_source=github&utm_medium=referral&utm_campaign=litert_tensor_api_route&utm_content=related_repo_readme) — **documentation/engineering analysis only, not an independent Tensor API hardware benchmark**.
+
 ## Mac 270M PDF/DOCX conversion pilot — 2026-10-10
 
 We converted 16 genuinely published XBSTACK bilingual technical articles into 8 real PDF and 8 DOCX files, re-parsed them, and indexed 278 overlapping chunks. The exact original public Markdown sources and their SHA256 fingerprints are included in this repo. 32 author-written queries compared SQLite FTS5 with 768/512/256/128d text embeddings and equal-weight RRF. These files are conversions, not native/scanned PDFs. No OCR or independent human passage annotations were evaluated.
